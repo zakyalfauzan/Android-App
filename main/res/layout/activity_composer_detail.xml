@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/tv_composer_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@string/year"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_composer_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            tools:text="@string/detail"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv_composer_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="@string/song"
+                    android:textSize="14sp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_composer_sonata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    tools:text="@string/composer_sonata"
+                    android:textSize="14sp"
+                    android:paddingBottom="4dp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
